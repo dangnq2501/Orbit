@@ -22,7 +22,7 @@ TABLE_NAME = os.getenv("TABLE_NAME")
 engine_url = f"postgresql://{POSTGRES_USER}:{POSTGRES_PASSWORD}@{POSTGRES_HOST}:{POSTGRES_PORT}/{POSTGRES_DB}"
 
 print("⏳ Waiting for PostgreSQL to be ready...")
-time.sleep(10)
+time.sleep(5)
 
 # Đọc file CSV
 csv_path = os.path.join(CSV_DIR, CSV_FILENAME)
